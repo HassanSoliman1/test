@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,400&family=Ubuntu:wght@400;500;700&display=swap');
+
+*
+{
+    box-sizing: border-box;
+}
+
+.navbar
+{
+    position: fixed;
+    width: 100%;
+    font-family: 'Ubuntu',sans-serif;
+    padding: 20px 0;
+    transition: all 0.6s ease-in-out;
+    z-index: 999;
+}
+
+.nav
+{
+    background-color: crimson;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.navbar .max-width
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1300px;
+    margin:auto;
+    padding: 0 80px;
+}
+
+.navbar .logo a
+{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbar .logo a span
+{
+    color: crimson;
+    transition: all 0.6s ease-in-out;
+
+
+}
+
+/* adding after scroll to name logo */
+.nav .logo a span
+{
+    color: #fff;
+}
+
+.navbar .max-width .menu li
+{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .max-width .menu 
+{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .menu a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu a:hover
+{
+    color: crimson;
+}
+
+.nav .menu a:hover
+{
+    color: #fff;
+    font-weight:600;
+}
+
+/* menu button styling */
+.menu-btn
+{
+    font-size: 23px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+/* home section styling */
+#home
+{
+    display: flex;
+    background: url(../Images/bgHome.jpg);
+    height: 100vh;
+    background-size:cover;
+    color: #fff;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 19px;
+    
+
+}
+
+#home .max-width
+{
+    margin: auto 0 auto 40px;
+}
+
+#home .home-content .text-1
+{
+    font-size: 27px;
+}
+
+#home .home-content .text-2
+{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+
+}
+
+#home .home-content .text-3
+{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+#home .home-content .text-3 span
+{
+    color: crimson;
+    font-weight: 500;
+}
+
+.home-content a
+{
+    display: inline-block;
+    background-color: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    text-decoration: none;
+    transition: all 0.3600s ease-in-out;
+}
+
+.home-content a:hover
+{
+    background-color: transparent;
+    color: crimson;
+}
+
+
+/* section About */
+#about .photo img
+{
+    width: 600px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#about .text
+{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#about p
+{
+    font-weight: 400;
+    font-family:cursive;
+    font-size: 18px;
+}
+#about .text span
+{
+    color: crimson;
+}
+
+#about a
+{
+    display: inline-block;
+    background-color: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 2px 25px;
+    margin-top: 4px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    text-decoration: none;
+    transition: all 0.3600s ease-in-out;
+}
+
+#about a:hover
+{
+    color: crimson;
+    background-color:transparent;
+}
+
+
+/* Section Services */
+#services
+{
+    margin-top: 20px;
+    background-color: #111;
+    padding-bottom: 50px;
+}
+
+#services h1
+{
+    font-family: monospace;
+}
+
+#services .fas
+{
+    font-size: 40px;
+    color: crimson;
+}
+
+#services .card
+{
+    background-color: #222;
+    color: #fff;
+    padding: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+#services .card:hover
+{
+    background-color: crimson;
+    color: #fff;
+    transform: scale(1.05);
+    /* border: crimson 2px solid; */
+}
+#services .card:hover i
+{
+    color: #fff;
+}
+
+
+/* Section Slider */
+#slide 
+{
+  width: 800px;
+  padding: 50px;
+  margin: auto;
+  background-color: transparent;
+
+}
+
+#slide img
+{
+    width: 800px !important;
+}
+
+#slide .title
+{
+    font-family: cursive;
+    color: #888;
+    font-weight: 600;
+    padding-bottom:3px;
+}
+
+/* Contacts */
+
+.touch
+{
+    background-color: #f1f1f1;
+}
+
+.Get
+{
+    font-size: 32px;
+    color: #282828;
+    line-height: 32px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+.iconn
+{
+
+    display: flex;
+    font-size: 28px;
+    color: tomato;    
+}
+
+.Address
+{
+    font-size: 26px;
+    color: #282828;
+    font-weight: 600;
+    line-height: 24px;
+    margin-left: 10px;
+}
+
+.para
+{
+    margin-left: 40px;
+    
+}
+
+.iconn:hover .Address
+{
+    color: tomato;
+}
+
+.field-name
+{
+    width: 100%;
+    line-height: 1;
+    padding: 14px 18px;
+    color: #a6a6a6;
+    border-radius: 3px;
+    border: 2px solid #eee;
+    background-color: #fff;
+
+}
+
+.field-message
+{
+    height: 110px;
+    width: 100%;
+    line-height: 1;
+    padding: 14px 18px;
+    color: #a6a6a6;
+    border-radius: 3px;
+    border: 2px solid #eee;
+    background-color: #fff;
+
+}
+
+.field-name:hover
+{
+    border:2px solid tomato;
+}
+
+.field-message:hover
+{
+    border:2px solid tomato;
+}
+
+.button
+{
+    border: 2px solid transparent;
+    padding: 9px;
+    width: 160px;
+    color: #fff;
+    background-color: #f25454;
+    transition: color 0.5s ease-in-out;
+}
+
+.button:hover
+{
+    background-color: transparent;
+    color: crimson;
+}
+
+/* Skills */
+#skills
+{
+    height: 100vh;
+
+}
+
+#skills h2
+{
+    font-family: monospace;
+}
+ 
+#skills .row .text
+{
+    font-size: 26px;
+    font-weight: 400;
+    font-family:monospace
+}
+
+#skills .row .left
+{
+    font-size: 19px;
+    font-family: sans-serif;
+}
+
+#skills .row .left a
+{
+    
+    display: inline-block;
+    background-color: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 2px 25px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    text-decoration: none;
+    transition: all 0.3600s ease-in-out;
+}
+
+#skills .row .left a:hover
+{
+    background-color: transparent;
+    color: crimson;
+}
+
+#skills .row .right img
+{
+    width: 400px;
+     height: 400px;
+}
+
+/* Arrow Up */
+#arrow-up
+{
+    position: absolute;
+    right: 30px;
+    bottom: 40px;
+    background-color: rgb(200, 221, 218);
+    width: 70px;
+    height: 70px;
+    border-radius:50px ;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 12px;
+    position: fixed;
+    display: none;
+    cursor: pointer;
+}
+
+
+/*Section of footer */
+
+#footer
+{
+    width: 100%;
+    height: 60px;
+    background-color: #111;
+}
+
+#footer .icons
+{
+    font-size: 25px;
+    color: #fff;
+    padding-top: 4px;
+}
+
+#footer .icons i
+{
+    padding: 10px;
+    color: #fff;
+}
+
+#footer .icons a:hover i 
+{
+    color: crimson;
+}
+
+
+
+
+
+/* Media query */
+@media  (max-width: 911px){
+    
+    .max-width
+    {
+        padding: 0 50px;
+    }
+    
+    .menu-btn
+    {
+        display: block;
+        z-index: 999;
+    }
+
+    .navbar .menu 
+    {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background-color: #111;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+
+    }
+
+    .navbar .menu.active
+    {
+        left: 0;
+    }
+    .navbar .menu li
+    {
+        display:block;
+        width: 100%;
+    }
+
+    .navbar .menu li a
+    {
+        display: inline-block;
+        margin: 15px 0;
+        font-size: 25px;
+    }
+
+    #home .home-content .text-2
+    {
+        font-size: 30px;
+
+    }
+
+    #home .home-content .text-3
+    {
+        font-size: 20px;
+    
+    }
+
+    .home-content a
+    {
+        font-size: 20px;
+        padding: 6px 25px;
+    }
+}
